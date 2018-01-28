@@ -1,0 +1,10 @@
+create database ecommerce;
+
+create table products(id int(11) auto_increment primary key, name varchar(255), image varchar(255), price int, discount int );
+create table categories(id int(11) auto_increment primary key, name varchar(255) );
+create table product_category(id int(11) auto_increment primary key, product_id int, category_id int );
+
+insert into products (id, name, image, price, discount) values (null, 'hickory','' , 999000, 20), ( null, 'houston rockets','' , 1299000, 15);
+insert into products (id, name, image, price, discount) values (null, 'indiana pacers','' , 899000, 30), ( null, 'detroit ripcity','' , 1099000, 20) ;
+
+
